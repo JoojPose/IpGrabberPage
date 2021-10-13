@@ -1,3 +1,4 @@
+<?php
 $protocol = $_SERVER['SERVER_PROTOCOL'];
 $ip = $_SERVER['REMOTE_ADDR'];
 $port = $_SERVER['REMOTE_PORT'];
@@ -16,3 +17,4 @@ fwrite($fh, 'HTTP Referer: '."".$ref ."\n\n");
 fclose($fh)
 header("Location: https://google.com");
 die();
+?>
